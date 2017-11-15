@@ -28,7 +28,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pexels-photo-286198" translatesAutoresizingMaskIntoConstraints="NO" id="APl-QD-ZSE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ice" translatesAutoresizingMaskIntoConstraints="NO" id="APl-QD-ZSE">
                                 <rect key="frame" x="67" y="166" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -53,6 +53,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pexels-photo-286198" width="5791" height="4016"/>
+        <image name="ice" width="5791" height="4016"/>
     </resources>
 </document>
