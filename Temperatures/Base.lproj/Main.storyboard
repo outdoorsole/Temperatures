@@ -45,6 +45,7 @@
                     </view>
                     <connections>
                         <outlet property="tempLabel" destination="vnz-fR-IBh" id="ptq-qh-5wK"/>
+                        <outlet property="waterImage" destination="APl-QD-ZSE" id="HFa-SV-Tkt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

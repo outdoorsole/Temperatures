@@ -14,6 +14,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     var temps = [Int]()
     
     @IBOutlet weak var tempLabel: UILabel!
+    @IBOutlet weak var waterImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +30,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         print(component)
-        return 200
+        return 201
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
@@ -41,6 +42,13 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         print("didSelectRow \(row)")
         let tempF = celsiusToF(celsius: Double(row) - 49.0)
         tempLabel.text = String(format: "%.2f", tempF) + "ºF"
+        if temps[row] < 0 {
+            waterImage.image = UIImage(named: "ice")
+        } else if temps[row] < 100 {
+            waterImage.image = UIImage(named: "water")
+        } else {
+            waterImage.image = UIImage(named: "steam")
+        }
     }
     
     func celsiusToF(celsius: Double) -> Double {
